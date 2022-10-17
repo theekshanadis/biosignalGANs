@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np 
 from scipy.signal import resample
 
+# point to the downloaded folder
 fp = open('./data/RECORDS', 'r')
 recordings = fp.readlines()
 fp.close()
@@ -10,6 +11,7 @@ recordings = [f.strip() for f in recordings]
 
 DIR = './data/'
 
+# define the save directory
 SAVE = '/media/PPGECG/Data4/'
 
 WL = 2.0
@@ -47,6 +49,7 @@ for file in recordings:
 
 			INXEX += 1
 
+# subject to recording is used for subject-independent evaluations. 
 import pickle
 with open('{}subject_to_recording.pickle'.format(SAVE), 'wb') as handle:
     pickle.dump(subject_to_recording, handle, protocol=pickle.HIGHEST_PROTOCOL)
