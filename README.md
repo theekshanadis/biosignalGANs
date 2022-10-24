@@ -3,18 +3,18 @@ Adversarial learning models for biological signals including artificial synthesi
 
 ![maindiagram](https://user-images.githubusercontent.com/19911856/197334132-fd593419-1e66-4bd7-b89b-4f23e613d6a1.png)
 
-Requirements:
+## Requirements:
 1. Pytorch 1.5.0>
 2. Numpy
 3. Matplotlib 
 
-Databases: For our experiments, we use publically available datasets. We have given our feature extraction codes (*create_data.py*) in each corresponding repository. 
+## Databases: For our experiments, we use publically available datasets. We have given our feature extraction codes (*create_data.py*) in each corresponding repository. 
 1. PTBXL (from PhysioNet) - https://physionet.org/content/ptb-xl/1.0.0/
 2. EPHNOGRAM (from PhysioNet) https://physionet.org/content/ephnogram/1.0.0/
 3. PhysioNet-CinC2016 - https://physionet.org/content/challenge-2016/1.0.0/
 4. MIT-BIH Arrhythmia - https://www.physionet.org/content/mitdb/1.0.0/
 
-Steps for running our algorithms:
+## Steps for running our algorithms:
 1. Run our segment generation codes after downloading the corresponding datasets. Please be careful about the directory structure in your own machine. Save the data properly and provide the exact location of the data while training the models. 
 2. To load the data and prepare the data for a subject independent evaluation protocol, we often use dictionary structured files. These files will be automatically written into the corresponding folders if needed, and will be loaded when training. 
 3. Most of our scripts have a visualization directory where we write the reconstructions/generations while training the models. We use this to manually check the performance of the GAN. The directory structure starts with .SIN, and you have to create that directory in your folder. 
