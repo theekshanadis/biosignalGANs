@@ -22,3 +22,9 @@ For our experiments, we use publically available datasets. We have given our fea
 4. Furthermore, DIR = T*/V* denotes the test number and the version number we used. When you’re training the model, your epoch-level visualizations will be written to ./SIN/T*/V*/f{epoch}/ and the model state will also be written into that folder. 
 5. The loss variations will get saved in the Loss file. 
 6. This repository provides all the implementation details for the models in the paper with exact pytorch modules and training functions. Our sole intention is to provide the code segments, and we encourage researchers to use their own customized scripts while following our data extraction protocols and loss functions. 
+
+## Specific Details.
+1. EPHNOGRAM
+   - PixtoPix-style-transfer [PCG-to-ECG](./EPHNOGRAM/pcg_to_ecg.py)
+   - PixtoPix-style-transfer [ECG-to-PCG](./EPHNOGRAM/ecg_to_pcg.py)
+   
