@@ -14,4 +14,10 @@ Databases: For our experiments, we use publically available datasets. We have gi
 3. PhysioNet-CinC2016 - https://physionet.org/content/challenge-2016/1.0.0/
 4. MIT-BIH Arrhythmia - https://www.physionet.org/content/mitdb/1.0.0/
 
-Steps for 
+Steps for running our algorithms:
+1. Run our segment generation codes after downloading the corresponding datasets. Please be careful about the directory structure in your own machine. Save the data properly and provide the exact location of the data while training the models. 
+2. To load the data and prepare the data for a subject independent evaluation protocol, we often use dictionary structured files. These files will be automatically written into the corresponding folders if needed, and will be loaded when training. 
+3. Most of our scripts have a visualization directory where we write the reconstructions/generations while training the models. We use this to manually check the performance of the GAN. The directory structure starts with .SIN, and you have to create that directory in your folder. 
+4. Furthermore, DIR = T*/V* denotes the test number and the version number we used. When you’re training the model, your epoch-level visualizations will be written to ./SIN/T*/V*/f{epoch}/ and the model state will also be written into that folder. 
+5. The loss variations will get saved in the Loss file. 
+6. This repository provides all the implementation details for the models in the paper with exact pytorch modules and training functions. Our sole intention is to provide the code segments, and we encourage researchers to use their own customized scripts while following our data extraction protocols and loss functions. 
