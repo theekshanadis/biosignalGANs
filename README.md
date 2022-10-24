@@ -13,3 +13,5 @@ Databases: For our experiments, we use publically available datasets. We have gi
 2. EPHNOGRAM (from PhysioNet) https://physionet.org/content/ephnogram/1.0.0/
 3. PhysioNet-CinC2016 - https://physionet.org/content/challenge-2016/1.0.0/
 4. MIT-BIH Arrhythmia - https://www.physionet.org/content/mitdb/1.0.0/
+
+Steps for 
