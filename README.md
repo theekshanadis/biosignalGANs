@@ -28,11 +28,16 @@ For our experiments, we use publically available datasets. We have given our fea
    - PixtoPix-style-transfer [PCG-to-ECG](./EPHNOGRAM/pcg_to_ecg.py)
    - PixtoPix-style-transfer [ECG-to-PCG](./EPHNOGRAM/ecg_to_pcg.py)
    - GAN for 3s ECG generation [ECG](./EPHNOGRAM/ecg_to_pcg.py)
+   - WAE-GAN for ECG generation/reconstruction [ECG](./EPHNOGRAM/ecg_to_pcg.py)
+   - WAE-GAN for PCG generation/reconstruction [ECG](./EPHNOGRAM/ecg_to_pcg.py)
 2. MIT-BIH
    - Baseline model implementation DCGAN from [Generating electrocardiogram signals by deep learning](https://www.sciencedirect.com/science/article/pii/S0925231220306615) our implementation [code](./MIT-BIH/baseline.py)
 3. PTB
    - PixtoPix-style-transfer [VCG-to-12lead ECG](./PTB/vcg_to_12ecg.py)
 4. PTBXL
    - WAE-GAN for generation/reconstructions [12lead ECG]
-   
+5. PhysioNetCinC2016
+   - GAN for PCG generation 
+   - C-GAN for PCG generation
+   - Our baseline model 
    
