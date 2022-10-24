@@ -8,7 +8,8 @@ Adversarial learning models for biological signals including artificial synthesi
 2. Numpy
 3. Matplotlib 
 
-## Databases: For our experiments, we use publically available datasets. We have given our feature extraction codes (*create_data.py*) in each corresponding repository. 
+## Databases: 
+For our experiments, we use publically available datasets. We have given our feature extraction codes (*create_data.py*) in each corresponding repository. 
 1. PTBXL (from PhysioNet) - https://physionet.org/content/ptb-xl/1.0.0/
 2. EPHNOGRAM (from PhysioNet) https://physionet.org/content/ephnogram/1.0.0/
 3. PhysioNet-CinC2016 - https://physionet.org/content/challenge-2016/1.0.0/
