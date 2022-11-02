@@ -35,7 +35,8 @@ For our experiments, we use publically available datasets. We have given our fea
 3. PTB
    - PixtoPix-style-transfer [VCG-to-12lead ECG](./PTB/vcg_to_12ecg.py)
 4. PTBXL
-   - WAE-GAN for generation/reconstructions [12lead ECG]
+   - WAE-GAN for generation/reconstructions [12-lead ECG]
+   - WAE-GAN for generation/reconstructions [7th-lead/12-lead ECG]
 5. PhysioNetCinC2016
    - GAN for PCG generation 
    - C-GAN for PCG generation
