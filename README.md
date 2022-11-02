@@ -42,3 +42,5 @@ For our experiments, we use publically available datasets. We have given our fea
    - C-GAN for PCG generation
    - Our baseline model 
    
+## References: 
+1. Pytorch-GAN: Collection of PyTorch implementations of Generative Adversarial Network varieties presented in research papers. [Link](https://github.com/eriklindernoren/PyTorch-GAN)
