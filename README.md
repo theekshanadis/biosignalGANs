@@ -4,7 +4,7 @@ Adversarial learning models for biological signals including artificial synthesi
 ![maindiagram](https://user-images.githubusercontent.com/19911856/197334132-fd593419-1e66-4bd7-b89b-4f23e613d6a1.png)
 
 ## Requirements:
-1. Pytorch 1.5.0>
+1. Pytorch 1.5.0> (we use the standard functionality of PyTorch)
 2. Numpy
 3. Matplotlib 
 
