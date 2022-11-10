@@ -354,6 +354,7 @@ for epoch in range(1, 1000):
         loss_cycle_B = criterion_cycle(recov_B, real_B)
         loss_cycle = 0.5 * (loss_cycle_B + loss_cycle_A)
 
+        # for stability of the model, we added an additional L1 loss which was not in the original implementation. 
         l1_loss = 0.5*(F.l1_loss(fake_A, real_A) + F.l1_loss(fake_B, real_B))
 
         loss_G = loss_GAN + 2 * loss_cycle + 2 * loss_identity + l1_loss
