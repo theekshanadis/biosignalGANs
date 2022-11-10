@@ -95,11 +95,11 @@ params_te = {'batch_size': 48,
 training_generator = torch.utils.data.DataLoader(train_dataset, **params_te)
 validation_generator = torch.utils.data.DataLoader(test_dataset, **params_te)
 
+# create ./Loss/ for save the loss-variation.
+
 # model
 z = 256
-
-DIR = 'T3/V1'
-
+DIR = 'T3/V1' # create this directory before runing the code. 
 generator = Generator()
 discriminator = Discriminator()
 code = 'GAN-D2-{}-{:d}'.format(DIR.replace('/','-') ,z)
@@ -107,9 +107,6 @@ code = 'GAN-D2-{}-{:d}'.format(DIR.replace('/','-') ,z)
 generator, discriminator = generator.cuda(), discriminator.cuda()
 
 adverserial_loss = nn.BCELoss()
-
-#optimizer_G = torch.optim.Adam(generator.parameters(), lr=0.0002, betas=(0.5, 0.999))
-#optimizer_D = torch.optim.Adam(discriminator.parameters(), lr=0.0002, betas=(0.5, 0.999))
 
 optimizer_G = torch.optim.Adam(generator.parameters(), lr=0.001)
 optimizer_D = torch.optim.Adam(discriminator.parameters(), lr=0.0001)
@@ -129,7 +126,6 @@ print('# of parameters (gen):', sum(p.numel() for p in generator.parameters() if
 print('# of parameters (disc):', sum(p.numel() for p in discriminator.parameters() if p.requires_grad))
 
 min_recons = np.inf
-
 generator_loss, discriminator_loss = [], []
 
 for epoch in range(400):
@@ -175,7 +171,6 @@ for epoch in range(400):
             except FileExistsError:
                 pass
             ids = np.random.choice(48, 24, replace=True)
-
             for i, id_ in enumerate(ids):
                 plt.imshow(x_recons[id_, ][0, ].cpu().detach().numpy())
                 plt.savefig('{}/f_{:d}.png'.format(dirname, i))
