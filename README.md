@@ -38,8 +38,9 @@ For our experiments, we use publically available datasets. We have given our fea
    - WAE-GAN for generation/reconstructions [12-lead ECG](./PTBXL/pixtopix_12x12.py)
    - WAE-GAN for generation/reconstructions [7th-lead/12-lead ECG]
 5. PhysioNetCinC2016
-   - GAN for PCG generation 
-   - C-GAN for PCG generation
+   - GAN for PCG generation [PCG-GAN](./PhysioNetCinC2016/gan.py)
+   - C-GAN for PCG generation [PCG-CGAN](./PhysioNetCinC2016/cgan.py)
+   - WAE-GAN for PCG generation [PCG-CGAN](./PhysioNetCinC2016/wae_gan.py)
    - Our baseline model 
    
 ## References: 
